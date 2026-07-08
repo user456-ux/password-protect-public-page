@@ -40,9 +40,11 @@
             display: inline-block;
         }
         .div-1 {
-            background-color: #eeeaea;
+            background-color: #d6eaf8;
             color: #333;
             font-size: large;
+            border-bottom: 4px solid #2980b9;
+            padding-left: 16px;
         }
         .div-2 {
             /* background-color: #eeeaea; */
@@ -67,10 +69,19 @@
             </div>
         
             <div class="div-1">
-            <br/>  &nbsp;&nbsp;This page requres a password.  If you were not given this link directly by the page owner, please exit
-            immediately.  <br/>  
-            &nbsp;&nbsp<b>All access</b> (IPs, Browser, Device, Location etc.) are being tracked and recorded 
-            for security and access audits. <br/><br/>
+            <br/>This page requires a password.  If you were not given this link directly by the page owner, please exit
+            immediately.  <br/>
+            <b>All access</b> (IPs, Browser, Device, Location etc.) are being tracked and recorded
+            for security and access audits.
+
+            <hr>
+            <span style="color: #2874a6; font-weight: bold;">Please note:</span> this is only a demonstration.<br/>
+            To fully implement security you must hide the source behind a "private" static page hosting service.<br/><br/>
+
+            GitHub offers an "upgrade", however, there are many free alternatives for static "private" page hosting options.
+            Note: a "private" repo protects your intellectual property and source code, but also impedes the "open source" knowledge and sharing model.<br>
+
+            <br/><br/>
             </div>     
     </div>
 
@@ -81,17 +92,21 @@
     <!-- content hidden-->
 
     <div class="fixed-footer">
-        <div class="container" style="float: left;">&nbsp;&nbsp; Copyright 2026 
+        <div class="container" style="float: left;">&nbsp;&nbsp; &copy; Copyright 2026
             &nbsp;&nbsp;&nbsp;&nbsp; </div>        
     </div>
 
     <!-- <div class="div-2">body text</div> -->
+        <br/><br/>   <br/><br/>   <br/><br/>    <br/><br/>
     	<div id="loginbox" class="lightbox" >
 		<div class="horizontal">
 			<div class="vertical"> </br>
 				<div class="box">
-					<input style="width: 400; margin: 16px; text-align: center" id="password" type="password" placeholder="Enter your access code" /> <br />
-					<button  style="float: right" id="loginbutton" type="button">Enter</button>
+					<label style="margin: 16px 16px 2px 16px; display: block" for="username">User:</label>
+					<input style="width: 400; margin: 2px 16px 12px 16px; text-align: center" id="username" type="text" value="ghUser1" readonly /> <br />
+					<label style="margin: 4px 16px 2px 16px; display: block" for="password">Password:</label>
+					<input style="width: 400; margin: 2px 16px 16px 16px; text-align: center" id="password" type="password" placeholder="Enter your access code" /> <br />
+					<button  style="float: right; border: 2px solid #5cb85c;" id="loginbutton" type="button">Enter</button>
 			    	<!-- <p id="wrongPassword" style="display: none">wrong Password</p> -->
 				</div>
 			</div>
